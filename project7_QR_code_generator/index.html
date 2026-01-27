@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <!--// defer means can use in head as well-->
+  </head>
+  <body>
+
+  <!-- Back to Portfolio Ribbon -->
+    <div class="portfolio-ribbon">
+      <a href="../index.html" class="back-btn">
+        ← Back to Portfolio
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <section class="upper">
+          <h1>QR Code Generator</h1>
+          <p>Paste text here to create QR Code</p>
+        </section>
+        <form id="qrForm">
+          <input
+            type="text"
+            name="qrText"
+            placeholder="type here"
+            id="qrInputText"
+          />
+          <button id="generateBtn" type="submit" class="subbutton">
+            Generate Your QR
+          </button>
+        </form>
+        <div id="qrContainer" class="qrContainer">
+          <img id="qrImage" src="./images/qr.webp" alt="Not Found" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

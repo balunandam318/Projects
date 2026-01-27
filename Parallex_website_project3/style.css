@@ -1,0 +1,126 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:#666;
+}
+.portfolio-ribbon {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg,#21083f);
+  padding: 10px 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Back Button */
+.back-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: white;
+  color: #0d6efd;
+}
+.pimg1{
+    background-image: url(images/image1.png);
+    min-height:100%;
+    
+}
+.pimg2{
+    background-image: url(images/image2.png);
+    min-height:400px;
+    
+}.pimg3{
+    background-image: url(images/image3.png);
+    min-height:400px;
+    
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    margin:0 auto;
+    color:black;
+    font-size:27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.textbg{
+    background: #313534;
+    color:#fff;
+    padding:20px;
+
+}
+.section{
+    padding: 50px 80px;
+    text-align:center;
+
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color:#ddd;
+}
+
+/* ---------- MOBILE STYLES ---------- */
+@media (max-width: 768px) {
+
+    html, body {
+      font-size: 14px;
+      line-height: 1.6em;
+    }
+  
+   
+  
+    .ptext {
+      font-size: 16px;
+      letter-spacing: 2px;
+      padding: 0 2px;
+    }
+  
+    .textbg {
+      padding: 15px;
+      font-size: 16px;
+    }
+  
+    .section {
+      padding: 30px 20px;
+    }
+  
+    .section-light,
+    .section-dark {
+      text-align: left;
+      font-size: 15px;
+    }
+  }
+  

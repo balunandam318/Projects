@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+
+*{
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+}
+    
+
+.background{
+    background-image: url("images/mountain.jpg");
+    height:100vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+/* .container{
+    display:flex;
+    place-self: center;
+    align-items:center;
+    height:80vh;
+} */
+/* same as below */
+
+/* Top Ribbon Bar */
+.portfolio-ribbon {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg,#21083f);
+  padding: 10px 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Back Button */
+.back-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: white;
+  color: #0d6efd;
+}
+
+
+.container{
+    display:grid;
+    place-items: center;
+    height:100vh;
+    /* margin-bottom: 200px; */
+
+}
+.container h1{
+    font-size: 3rem;
+}
+.settings {
+    position: absolute;
+    bottom:30px;
+    right:20px;
+    display:flex;
+    gap:1rem;
+    align-items:center;
+}
+.settings .fa-cog{
+    font-size:2rem;
+    /* color:white; */
+}
+.settings-content{
+    display:flex;
+    gap:0.5rem;
+}
+.settings-content input{
+    padding: 0.2rem 0.5rem;
+    font-size:1rem;
+}
+.settings-content button{
+    padding: 0.2rem 0.5rem;
+    background-color: green;
+    border:none;
+    border-radius:10px;
+    font-size: 1rem;
+    color:white;
+
+}
+
+.hide{
+    display:none;
+}
+.time-container{
+    margin-top:1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+.time-container h2{
+    line-height:60px;
+    text-align:center;
+    font-size:2rem;
+}
+.time-container div{
+    font-size:4rem;
+    color:white;
+}
+
+@media (max-width: 768px) {
+    /* Ensure the HTML and body take up the entire height without overflow */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  #initialText.hide,
+  #afterText.hide {
+    display: none !important;
+  }
+
+  #initialText,
+  #afterText {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Background settings */
+  .background {
+    background-image: url("images/mountain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the full container */
+    background-position: center; /* Keeps the image centered */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure no background overflow */
+  }
+  
+  /* Container adjustments */
+  .container {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Adjust title size for mobile */
+  .container h1 {
+    font-size: 5vw; /* Adjusts font size based on screen width */
+  }
+  
+  /* Adjust time display layout for mobile */
+  .time-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .time-container h2 {
+    font-size: 3.5vw; /* Adjusts time units size */
+  }
+  
+  .time-container div {
+    font-size: 6vw; /* Adjusts numbers size */
+    color: white;
+  }
+  
+  /* Adjust settings for mobile */
+  .settings {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .settings .fa-cog {
+    font-size: 2rem;
+  }
+  
+  .settings-content input,
+  .settings-content button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+    }
+  }
+  

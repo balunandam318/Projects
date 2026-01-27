@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job_Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <!-- Back to Portfolio Ribbon -->
+    <div class="portfolio-ribbon">
+      <a href="../index.html" class="back-btn">
+        ← Back to Portfolio
+      </a>
+    </div>
+    <div class="container">
+      <div class="apply_box">
+        <h1>Job Application <span class="title_small">(web)</span></h1>
+        <form action="">
+          <div class="form_container">
+            <div class="form_control">
+              <label for="firstname">First Name</label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Enter First name here...."
+              />
+            </div>
+            <div class="form_control">
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Enter last name here...."
+              />
+            </div>
+            <div class="form_control">
+              <label for="Email">Email</label>
+              <input
+                type="Email"
+                id="Email"
+                name="Email"
+                placeholder="Enter Email here...."
+              />
+            </div>
+            <div class="form_control">
+              <label for="job_role">Job_role</label>
+              <select name="job_role" id="job_role">
+                <option value="">Select Job role</option>
+                <option value="front_end">Front end</option>
+                <option value="backend">Back end</option>
+                <option value="Fulll_stack">Full stack</option>
+              </select>
+            </div>
+
+            <div class="textarea_control">
+              <label for="address">Address</label>
+              <textarea
+                name="addresss"
+                id="address"
+                placeholder="address"
+                row="5"
+                cols="50"
+              ></textarea>
+            </div>
+            <div class="form_control">
+              <label for="city">City</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Enter city here...."
+              />
+            </div>
+            <div class="form_control">
+              <label for="pincode">Pincode</label>
+              <input
+                type="number"
+                id="pincode"
+                name="pincode"
+                placeholder="Enter Pincode here...."
+              />
+            </div>
+            <div class="form_control">
+              <label for="date">Date</label>
+              <input type="date" value="2024-09-11" id="date" name="date" />
+            </div>
+            <div class="form_control">
+              <label for="file">Upload your CV here</label>
+              <input type="file" id="file" name="file" />
+            </div>
+          </div>
+          <div class="button_container">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
